@@ -1,0 +1,4 @@
+org\springmvc\security\config\AppContext.class
+org\springmvc\security\config\WebMvcConfig.class
+org\springmvc\security\config\controller\HomeController.class
+org\springmvc\security\config\AppInitializer.class
