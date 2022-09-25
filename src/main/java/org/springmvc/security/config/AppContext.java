@@ -23,7 +23,7 @@ public class AppContext {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("net.sf.log4jdbc.sql.jdbcapi.DriverSpy");
         dataSource.setUrl("jdbc:log4jdbc:mariadb://127.0.0.1:3306/interview_assignment_db?useUnicode=yes&amp;characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=UTC");
-        dataSource.setUsername("user");
+        dataSource.setUsername("root");
         dataSource.setPassword("pass");
         dataSource.setDefaultAutoCommit(false);
         return dataSource;

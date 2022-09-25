@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("org.springmvc.security")
+@ComponentScan("org.springmvc.security.config.controller")
 public class WebMvcConfig implements WebMvcConfigurer {
 
   @Autowired
@@ -87,7 +87,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
         // Static Resources 설정
         registry.addResourceHandler("/", "/**","/resources/**")
-                .addResourceLocations("/", "classpath:/static/","/resources/")
+                .addResourceLocations("/", "classpath:/","/resources/")
                 .setCacheControl(CacheControl.maxAge(10, TimeUnit.MINUTES));
     }
     @Bean

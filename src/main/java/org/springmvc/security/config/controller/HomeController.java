@@ -9,6 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public ModelAndView homeController (){
+        System.out.println("homeController");
         ModelAndView mav = new ModelAndView("jsp/index.jsp");
         return mav;
     }
